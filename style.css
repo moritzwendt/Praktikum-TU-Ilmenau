@@ -127,6 +127,7 @@ header{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
+    padding: 5rem 2rem;
 }
 
 header .content h4{
@@ -198,6 +199,10 @@ section .header{
     text-align: center;
     font-size: 2.25rem;
     font-weight: 600;
+}
+
+#section {
+    padding: 5rem 2rem;
 }
 
 .features{
@@ -509,34 +514,65 @@ footer .column > a:hover{
     .nav-links{
         display: none;
     }
-    header{
-        grid-template-columns: repeat(1, 1fr);
+    header {
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
     }
-    header .image{
-        grid-area: 1/1/2/2;
+
+    header .image {
+        order: -1;
     }
+
     .features{
         grid-template-columns: repeat(2, 1fr);
     }
     .pricing{
         grid-template-columns: repeat(2, 1fr);
     }
-    footer{
-        grid-template-columns: 1fr 200px;
+    footer.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+    }
+    
+    #top {
+        grid-column: 1 / 3;
+        grid-row: 1; 
+    }
+    
+    #contact-column {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #info-column {
+        grid-column: 2; 
+        grid-row: 2;
+    }
+    
+    #service-column {
+        grid-column: 1; 
+        grid-row: 3;
+    }
+    
+    #infos-column {
+        grid-column: 2;
+        grid-row: 3;
     }
 }
 
 @media (width < 600px){
-    header .image::before{
-        display: none;
-    }
-
     .features{
         grid-template-columns: repeat(1, 1fr);
     }
 
     .features .card:last-child {
         grid-column: span 1;
+    }
+
+    .image{
+        display: none;
     }
 
     .pricing{
@@ -547,8 +583,31 @@ footer .column > a:hover{
         grid-column: span 1;
     }
 
+    .header{
+        font-size: 26px !important;
+    }
+
+    .sub-header {
+        font-size: 15px;
+    }
+
     footer{
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1500px) {
+    #startScrollBtn {
+        display: none;
+    }
+
+    footer {
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #top{
+        grid-column: 1 / -1;
     }
 }
 
