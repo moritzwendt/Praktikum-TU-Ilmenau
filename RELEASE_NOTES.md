@@ -4,4 +4,3 @@
 - Bugfix für die Login-Seite
 - Verbesserte Performance in der Datenbankabfrage
 - Neue Funktionalität für die Benutzeroberfläche
-
