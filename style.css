@@ -642,7 +642,6 @@ footer .column > a:hover{
         margin: auto;
     }
     header .image::before {
-        content: "";
         position: absolute;
         top: 50%;
         left: 50%;
