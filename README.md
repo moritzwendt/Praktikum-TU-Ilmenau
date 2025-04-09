@@ -1,2 +1,14 @@
 # Praktikum-TU-Ilmenau
-Diese Webseite habe ich im Rahmen meines Schülerpraktikums an der Technischen Universität Ilmenau erstellt. Sie dient der Dokumentation meiner Erfahrungen im Bereich Fachinformatik für Systemintegration und wurde mit HTML, CSS und JavaScript entwickelt. Die Seite gibt einen Überblick über die verschiedenen Praktikumsaufgaben und bietet zusätzlich eine persönliche Kontaktmöglichkeit sowie nützliche Links zur Universität. Besonderen Wert habe ich auf eine einfache und übersichtliche Gestaltung gelegt, um die Inhalte klar und ansprechend darzustellen. Die Webseite enthält außerdem interaktive Elemente wie ein Modal für die Kontaktinformationen und eine dynamische Darstellung der täglichen Aufgaben. Ziel war es, eine funktionale und benutzerfreundliche Webseite zu erstellen, die die wichtigsten Informationen gut strukturiert präsentiert. Diese Seite dient ausschließlich der schulischen Dokumentation und enthält keine kommerziellen Inhalte.
+## Website Overview
+
+I developed this website as part of my internship at **Technische Universität Ilmenau**. Its purpose is to showcase my experiences in **IT Systems Integration**. The site was built using **HTML**, **CSS**, and **JavaScript**.
+
+### Key Features:
+- **Overview of Internship Tasks**: A comprehensive look at the tasks and projects I worked on.
+- **Contact Option**: Easy access to get in touch with me.
+- **Useful Links**: Direct connections to the university’s resources and important pages.
+
+I prioritized a **clean, minimal design** to ensure content is easily digestible and engaging. Features like a **modal for contact info** and a **dynamic task display** enhance user interaction, making it more than just a static webpage. 
+
+## Purpose:
+The website is focused on **educational documentation** and presents all the important information in a **structured and user-friendly manner**. It is not intended for commercial use.
