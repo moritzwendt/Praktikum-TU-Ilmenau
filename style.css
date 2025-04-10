@@ -516,14 +516,27 @@ footer .column > a:hover{
 @media (width < 900px){
     .nav-links{
         display: none;
-    }
-    header {
-        grid-template-columns: 1fr;
+    } 
+
+    header{
+        display: flex;
     }
 
     header .image {
-        order: -1;
+        display: none;
+        /*width: 270px;
+        height: 270px; */
     }
+    
+    /* header .image::before {
+        width: 270px;
+        height: 270px;
+    }
+
+    header .image img {
+        width: 200px;
+        height: 200px;
+    } */
 
     .features{
         grid-template-columns: repeat(2, 1fr);
@@ -590,11 +603,28 @@ footer .column > a:hover{
     }
 
     .sub-header {
-        font-size: 15px;
+        font-size: 17px;
+        text-align: justify;
     }
 
     footer{
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1100px) {
+    header .image {
+        width: 320px;
+        height: 320px;
+    }
+    header .image::before {
+        width: 320px;
+        height: 320px;
+    }
+
+    header .image img {
+        width: 270px;
+        height: 270px;
     }
 }
 
