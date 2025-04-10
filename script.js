@@ -1,9 +1,6 @@
 function scrollToElement(elementSelector, instance = 0) {
-    // Select all elements that match the given selector
     const elements = document.querySelectorAll(elementSelector);
-    // Check if there are elements matching the selector and if the requested instance exists
     if (elements.length > instance) {
-        // Scroll to the specified instance of the element
         elements[instance].scrollIntoView({ behavior: 'smooth' });
     }
 }
@@ -17,7 +14,6 @@ link1.addEventListener('click', () => {
 });
 
 link2.addEventListener('click', () => {
-    // Scroll to the second element with "header" class
     scrollToElement('.header', 1);
 });
 
@@ -33,13 +29,12 @@ losGehts.addEventListener('click', () => {
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
-var top = document.getElementByIdClassName("top");
 
 btn.onclick = function() {
     modal.style.display = "block";
 }
 
-span.onclick = function() {
+span.onclick = function() { 
     modal.style.display = "none";
 }
 

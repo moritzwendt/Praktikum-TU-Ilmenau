@@ -453,12 +453,15 @@ footer .column > a:hover{
     font-size: 28px;
     font-weight: bold;
     transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding: 0;
 }
 
 .close:hover,
 .close:focus {
     color: red;
-    font-size: 40px;
+    top: 1px;
+    right: 25px;
+    font-size: 150%;
     text-decoration: none;
     cursor: pointer;
 }
@@ -612,13 +615,13 @@ footer .column > a:hover{
 
 @media (min-width: 2300px) {
     .copyright{
-        max-width: 2200px;
+        max-width: 2100px;
     }
     nav {
-        max-width: 2200px;
+        max-width: 2100px;
     }
     .container {
-        max-width: 2200px;
+        max-width: 2100px;
     }
 
     .features{
@@ -632,12 +635,12 @@ footer .column > a:hover{
         gap: 3%;
     }
     :root{
-        font-size: 200%;
+        font-size: 120% !important;
     }
     header .image {
         position: relative;
-        width: 800px;
-        height: 800px;
+        width: 700px;
+        height: 700px;
         margin: auto;
     }
     header .image::before {
@@ -645,17 +648,21 @@ footer .column > a:hover{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 800px;
-        height: 800px;
+        width: 700px;
+        height: 700px;
         background-color: rgb(59, 133, 135);
         border-radius: 50%;
         opacity: 0.15;
         z-index: -1;
     }
     
+    .blur {
+        display: none !important;
+    }
+
     header .image img {
-        width: 640px;
-        height: 640px;
+        width: 580px;
+        height: 580px;
         object-fit: cover;
         border-radius: 50%;
         position: relative;
