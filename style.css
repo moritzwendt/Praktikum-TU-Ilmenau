@@ -516,7 +516,6 @@ footer .column > a:hover{
     }
     header {
         grid-template-columns: 1fr;
-        padding: 0 2rem;
     }
 
     header .image {
