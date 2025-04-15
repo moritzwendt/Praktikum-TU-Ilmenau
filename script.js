@@ -1,3 +1,5 @@
+// Copyright © 2025 Moritz Wendt. Alle Rechte vorbehalten. v.3.5
+
 function scrollToElement(elementSelector, instance = 0) {
     const elements = document.querySelectorAll(elementSelector);
     if (elements.length > instance) {
