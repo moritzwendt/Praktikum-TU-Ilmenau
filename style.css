@@ -586,6 +586,18 @@ a {
         grid-column: 2;
         grid-row: 3;
     }
+    .modal-headline{
+        font-size: 70%;
+    }
+    #mycnt{
+        font-size: 60%;
+    }
+    #myadd {
+        display: none;
+    }
+    .modal{
+        padding-top: 20%;
+    }
 }
 
 @media (width < 600px){
@@ -621,6 +633,9 @@ a {
     footer{
         grid-template-columns: 1fr;
     }
+    #myBtn{
+        display: none;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -651,6 +666,9 @@ a {
 
     #top{
         grid-column: 1 / -1;
+    }
+    .modal{
+        padding-top: 10%;
     }
 }
 
