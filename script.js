@@ -1,4 +1,8 @@
-// Copyright © 2025 Moritz Wendt. Alle Rechte vorbehalten. v.3.6.4
+// Copyright © 2025 Moritz Wendt. Alle Rechte vorbehalten. v.3.6.5
+
+
+
+/* ############################# 1️⃣ SCROLL-FUNKTIONEN ############################# */
 
 function scrollToElement(elementSelector, instance = 0) {
     const elements = document.querySelectorAll(elementSelector);
@@ -28,23 +32,47 @@ losGehts.addEventListener('click', () => {
     scrollToElement('.header');
 });
 
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0]; 
 
+
+/* ############################# 2️⃣ MODAL-FENSTER ############################# */
+
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("myBtn");
+const span = document.getElementsByClassName("close")[0]; 
+
+// Startzustand
+modal.classList.remove("show");
+modal.style.display = "none";
+
+// Öffnen
 btn.onclick = function() {
-    modal.style.display = "block";
+    modal.style.display = "flex";
+    setTimeout(() => {
+        modal.classList.add("show");
+    }, 10);
 }
 
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
+// Schließen über X
+span.onclick = function() {
+    modal.classList.remove("show");
+    setTimeout(() => {
         modal.style.display = "none";
+    }, 300);
+}
+
+// Schließen durch Klick außerhalb
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.classList.remove("show");
+        setTimeout(() => {
+            modal.style.display = "none";
+        }, 300);
     }
 }
+
+
+
+/* ############################# 3️⃣ AUTO-SCROLL ############################# */
 
 let scrollDirection = 1;
 let scrolling = false;
