@@ -600,6 +600,12 @@ a {
     }
 }
 
+@media (width < 450px) {
+    .nav-logo{
+        max-width: 70px;
+    }
+}
+
 @media (width < 600px){
     .features{
         grid-template-columns: repeat(1, 1fr);
@@ -620,6 +626,44 @@ a {
     .pricing .card:last-child {
         grid-column: span 1;
     }
+
+    /* fixes! */
+
+    .copyright {
+        font-size: 10px;
+    }
+
+    nav{
+        padding-bottom: 1rem;
+    }
+
+    header {
+        padding-top: 2rem !important;
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+    header .content h1 {
+        font-size: 2.3rem;
+        line-height: 1.5;
+    }
+
+    header .content h4 {
+        margin-bottom: 0.3em;
+    }
+
+    .sub-header{
+        max-width: 100%;
+    }
+
+    section{
+        padding-top: 0rem !important;
+    }
+
+    /* fixes! */
+
 
     .header{
         font-size: 26px !important;
