@@ -1,13 +1,16 @@
 // Copyright © 2025 Moritz Wendt. Alle Rechte vorbehalten. v.3.6.5
 
-
-
-/* ############################# 1️⃣ SCROLL-FUNKTIONEN ############################# */
-
-function scrollToElement(elementSelector, instance = 0) {
-    const elements = document.querySelectorAll(elementSelector);
+function scrollToElement(selector, instance = 0, offset = 0) {
+    const elements = document.querySelectorAll(selector);
     if (elements.length > instance) {
-        elements[instance].scrollIntoView({ behavior: 'smooth' });
+        const element = elements[instance];
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const targetPosition = elementPosition - offset;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
     }
 }
 
@@ -29,22 +32,18 @@ link3.addEventListener('click', () => {
 
 const losGehts = document.getElementById("losGehts");
 losGehts.addEventListener('click', () => {
-    scrollToElement('.header');
+    scrollToElement('.scrollToHeader', 0, 45);
 });
 
-
-
-/* ############################# 2️⃣ MODAL-FENSTER ############################# */
+/* ########################################################## */
 
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0]; 
 
-// Startzustand
 modal.classList.remove("show");
 modal.style.display = "none";
 
-// Öffnen
 btn.onclick = function() {
     modal.style.display = "flex";
     setTimeout(() => {
@@ -52,7 +51,6 @@ btn.onclick = function() {
     }, 10);
 }
 
-// Schließen über X
 span.onclick = function() {
     modal.classList.remove("show");
     setTimeout(() => {
@@ -60,7 +58,6 @@ span.onclick = function() {
     }, 300);
 }
 
-// Schließen durch Klick außerhalb
 window.onclick = function(event) {
     if (event.target === modal) {
         modal.classList.remove("show");
@@ -70,9 +67,7 @@ window.onclick = function(event) {
     }
 }
 
-
-
-/* ############################# 3️⃣ AUTO-SCROLL ############################# */
+/* ########################################################## */
 
 let scrollDirection = 1;
 let scrolling = false;
