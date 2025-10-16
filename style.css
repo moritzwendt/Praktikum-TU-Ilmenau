@@ -201,7 +201,7 @@ section .header{
     font-weight: 600;
 }
 
-#section {
+.upperSection{
     padding: 5rem 2rem;
 }
 
@@ -767,7 +767,7 @@ a {
     }
 
     nav{
-        padding: 5rem 2rem 1rem 2rem !important;
+        padding: 5.5em 2rem 0.5rem 2rem !important;
     }
 
     header {
@@ -780,15 +780,20 @@ a {
 
     header .content h1 {
         font-size: 2rem;
-        line-height: 1.5;
+        line-height: 1.2;
     }
 
     header .content h4 {
-        margin-bottom: 0.3em;
+        margin-bottom: 0em;
+    }
+
+    header .content h5 {
+        font-size: 1.6rem;
     }
 
     .sub-header{
         max-width: 100%;
+        line-height: 1.4;
     }
 
     .los_gehts .btn {
@@ -809,6 +814,39 @@ a {
 
     section .header {
         font-size: 1.3rem !important;
+    }
+
+    .upperSection{
+        padding: 2rem;
+    }
+
+    .features{
+        margin-top: 0.5rem;
+    }
+
+    .features .card i{
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .features .card h4{
+        font-size: 1.1rem;
+        line-height: 1.2;
+        margin-bottom: 0.2rem;
+    }
+
+    .features .card p{
+        font-size: 0.9rem;
+    }
+
+    footer .column .logo{
+        max-width: 70px;
+        margin-bottom: 1rem;
+        margin-left: -3.5px;
+    }
+
+    .phone{
+        text-decoration: none;
     }
 
     /* fixes! */
