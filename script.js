@@ -32,7 +32,8 @@ link3.addEventListener('click', () => {
 
 const losGehts = document.getElementById("losGehts");
 losGehts.addEventListener('click', () => {
-    scrollToElement('.scrollToHeader', 0, 45);
+    scrollToElement('.scrollToHeader', 0, 45
+    );
 });
 
 /* ########################################################## */

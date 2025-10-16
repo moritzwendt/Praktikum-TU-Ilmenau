@@ -1,4 +1,4 @@
-/* Copyright © 2025 Moritz Wendt. Alle Rechte vorbehalten. v.3.6.5 */
+/* Copyright © 2025 Moritz Wendt. Alle Rechte vorbehalten. v.3.6.7 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
@@ -843,6 +843,22 @@ a {
         max-width: 70px;
         margin-bottom: 1rem;
         margin-left: -3.5px;
+    }
+
+    footer .links{
+        line-height: 1.15;
+    }
+
+    footer .links h4 {
+        margin-bottom: 1rem;
+    }
+
+    footer.container{
+        gap: 1rem;
+    }
+
+    #top{
+        padding-bottom: 1rem;
     }
 
     .phone{
