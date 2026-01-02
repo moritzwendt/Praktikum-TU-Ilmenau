@@ -1,4 +1,4 @@
-// Copyright © 2025 Moritz Wendt. Alle Rechte vorbehalten. v.3.6.5
+// Copyright © 2025-2026 Moritz Wendt. Alle Rechte vorbehalten. v.3.6.5
 
 function scrollToElement(selector, instance = 0, offset = 0) {
     const elements = document.querySelectorAll(selector);
